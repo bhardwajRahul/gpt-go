@@ -69,7 +69,6 @@ type Head struct {
 	Value     *Linear
 }
 
-// Number of embeds
 func NewHead(embedSize, headSize int) *Head {
 	key := NewLinear(embedSize, headSize, NoBias())
 	query := NewLinear(embedSize, headSize, NoBias())
